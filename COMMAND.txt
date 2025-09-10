@@ -1,0 +1,130 @@
+! =============================
+! SafariTech Enterprise Network
+! =============================
+
+! --- HQ Core Switch (SW2) ---
+hostname HQ-CORE-SW2
+enable secret VLAN
+
+! VLANs
+vlan 10
+ name ENGINEERING
+vlan 20
+ name SALES
+
+! SVI Interfaces
+interface vlan 10
+ ip address 10.10.10.1 255.0.0.0
+ no shut
+interface vlan 20
+ ip address 20.10.10.1 255.0.0.0
+ no shut
+
+! Trunk Links
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20
+ !
+ interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20
+!
+ip route 
+interface FastEthernet0/1
+ no switchport
+ ip address 110.30.20.3 255.0.0.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/2
+ no switchport
+ ip address 192.14.0.5 255.255.255.0
+ duplex auto
+ speed auto
+
+! Routing
+ip route 0.0.0.0 0.0.0.0 110.30.20.1 
+ip route 0.0.0.0 0.0.0.0 192.14.0.10 
+
+! OSPF MD5
+interface vlan 10
+ ip ospf message-digest-key 1 md5 CISCO123
+interface vlan 20
+ ip ospf message-digest-key 1 md5 CISCO123
+
+########################################################3#######
+
+! --- Access Switch 1 (Engineering) ---
+hostname ENG-ACCESS-SWSW1
+enable secret VLAN 
+!
+VLANs 
+vlan 10
+ name ENGINEERING
+vlan 20
+ name SALES
+ !
+interface f0/1
+ switchport mode access
+ switchport access vlan 10
+!
+interface f0/2
+ switchport mode access
+ switchport access vlan 10
+ !
+interface GigabitEthernet0/1
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20
+ switchport mode trunk
+
+! --- Access Switch 3 (Sales) ---
+hostname SALES-ACCESS-SW3
+enable secret VLAN 
+!
+vlan 10
+ name ENGINEERING
+vlan 20
+ name SALES
+ !
+interface f0/1
+ switchport mode access
+ switchport access vlan 20
+interface f0/2
+ switchport mode access
+ switchport access vlan 20
+ !
+interface GigabitEthernet0/2
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20
+ switchport mode trunk
+
+! --- Router to ISP ---
+hostname HQ-EDGE-RTR
+enable secret VLAN 
+!
+interface f0/0
+ ip address 110.30.20.1 255.255.255.252
+ no shut
+interface f0/1
+ ip address 192.14.0.1 255.255.255.252
+ no shut
+interface f0/2
+ ip address 172.16.0.1 255.255.255.252
+ no shut
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 192.14.0.5 
+ip route 0.0.0.0 0.0.0.0 110.30.20.3 
+!
+router ospf 1
+ router-id 2.2.2.2
+ network 110.30.20.0 0.0.0.3 area 0
+ network 192.14.0.0 0.0.0.3 area 0
+ network 172.16.0.0 0.0.0.3 area 0
+ area 0 authentication message-digest
+
+

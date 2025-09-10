@@ -81,6 +81,8 @@ interface GigabitEthernet0/1
  switchport trunk allowed vlan 10,20
  switchport mode trunk
 
+#####################################################################
+
 ! --- Access Switch 3 (Sales) ---
 hostname SALES-ACCESS-SW3
 enable secret VLAN 
@@ -101,6 +103,8 @@ interface GigabitEthernet0/2
  switchport trunk native vlan 99
  switchport trunk allowed vlan 10,20
  switchport mode trunk
+
+##########################################################################
 
 ! --- Router to ISP ---
 hostname HQ-EDGE-RTR

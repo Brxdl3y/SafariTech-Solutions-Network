@@ -1,6 +1,6 @@
-SafariTech Solutions — Enterprise Network Lab
+**SafariTech Solutions — Enterprise Network Lab**
 
-Overview
+**Overview**
 
 This lab models **SafariTech's HQ network**: a small enterprise topology with clear separation of duties (Engineering vs Sales), a Layer‑3 core switch performing inter‑VLAN routing (SVIs), trunked access switches, and external router links to simulate upstream/ISP connectivity.
 

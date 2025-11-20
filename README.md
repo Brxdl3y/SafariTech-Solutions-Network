@@ -7,18 +7,18 @@ This lab models **SafariTech's HQ network**: a small enterprise topology with cl
 It intentionally goes beyond a classroom exercise — the configuration is written as if this were a real deployment: **secure management, authenticated routing, useful documentation** and **verifiable tests**. Think of it as a short, demonstrable portfolio piece for a networking engineer role.
 
 
-Topology (at a glance)
+**Topology (at a glance)**
 
 
 Core: 3560 L3 Core Switch (SVIs, OSPF area 0, management, hardened)
 
 Access: Two 2960 access switches (Engineering & Sales)
 
-Router: Edge router simulating ISP links and participating in OSPF
+Router: Edge router simulating ISP links and participating in **OSPF**
 
-Departments & subnets:
+**Departments & subnets**
 
-Engineering (VLAN 10) — 10.10.10.0/24 — SVI 10.10.10.1
+**Engineering (VLAN 10)** — 10.10.10.0/24 — SVI 10.10.10.1
 
 Sales (VLAN 20) — 20.10.10.0/24 — SVI 20.10.10.1
 

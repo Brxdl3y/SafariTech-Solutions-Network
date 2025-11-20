@@ -4,7 +4,7 @@
 
 This lab models **SafariTech's HQ network**: a small enterprise topology with clear separation of duties (Engineering vs Sales), a Layer‑3 core switch performing inter‑VLAN routing (SVIs), trunked access switches, and external router links to simulate upstream/ISP connectivity.
 
-It intentionally goes beyond a classroom exercise — the configuration is written as if this were a real deployment: secure management, authenticated routing, useful documentation, and verifiable tests. Think of it as a short, demonstrable portfolio piece for a networking engineer role.
+It intentionally goes beyond a classroom exercise — the configuration is written as if this were a real deployment: **secure management, authenticated routing, useful documentation** and **verifiable tests**. Think of it as a short, demonstrable portfolio piece for a networking engineer role.
 
 
 Topology (at a glance)

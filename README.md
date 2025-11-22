@@ -43,7 +43,7 @@ Router: Edge router simulating ISP links and participating in **OSPF**
 **Documentation-friendly configs** — commented CLI blocks, consistent naming, and verification commands to make the configuration hireable and maintainable.
 
 
-Networking Keypoints 
+**Networking Keypoints** 
 
 
 Design decision: "I chose SVIs on the L3 switch rather than ROAS for lower latency and higher throughput at the distribution layer."

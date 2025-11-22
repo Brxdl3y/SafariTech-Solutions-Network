@@ -20,12 +20,12 @@ Router: Edge router simulating ISP links and participating in **OSPF**
 
 **Engineering (VLAN 10)** — 10.10.10.0/24 — SVI 10.10.10.1
 
-Sales (VLAN 20) — 20.10.10.0/24 — SVI 20.10.10.1
+**Sales (VLAN 20)** — 20.10.10.0/24 — SVI 20.10.10.1
 
-Trunk links between Core ↔ Access (802.1Q), access ports to end hosts
+**Trunk links** between Core ↔ Access (802.1Q), access ports to end hosts
 
 
-What I built (features & rationale)
+**What I built (features & rationale)**
 
 
 **VLAN segmentation & SVIs** — isolates broadcast domains and places inter‑VLAN routing on the L3 core for performance and manageability.

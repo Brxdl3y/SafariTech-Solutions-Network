@@ -55,7 +55,7 @@ Operational readiness: "Configs include interface descriptions, banners, and bas
 Troubleshooting readiness: "I validated connectivity and built verification steps so issues can be triaged quickly."
 
 
-🌟 Skills Showcased
+**Skills Showcased**
 
 Advanced Cisco IOS configuration (routing, switching, security)
 

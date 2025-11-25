@@ -46,9 +46,9 @@ Router: Edge router simulating ISP links and participating in **OSPF**
 **Networking Keypoints** 
 
 
-Design decision: "I chose SVIs on the L3 switch rather than ROAS for lower latency and higher throughput at the distribution layer."
+Design decision: "I chose **SVIs** on the L3 switch rather than ROAS for lower latency and higher throughput at the distribution layer."
 
-Security posture: "I used MD5 for OSPF authentication and SSH-only vty access to harden management paths."
+Security posture: "I used **MD5** for OSPF authentication and **SSH-only vty access** to harden management paths."
 
 Operational readiness: "Configs include interface descriptions, banners, and basic hardening to reflect a production mindset."
 

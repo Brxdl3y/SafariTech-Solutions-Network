@@ -68,7 +68,7 @@ Troubleshooting and verification (**ping, traceroute, show commands**)
 Strong pragmatism and creativity in handling complex topologies
 
 
-Why This Project Matters
+**Why This Project Matters**
 
 This topology is more than a lab – it reflects my ability to design, configure, and secure enterprise-class networks. It proves my readiness for roles in network engineering, infrastructure design, and network security.
 

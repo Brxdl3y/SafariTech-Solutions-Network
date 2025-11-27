@@ -59,11 +59,11 @@ Troubleshooting readiness: "I validated connectivity and built verification step
 
 Advanced Cisco IOS configuration **(routing, switching, security)**
 
-Subnetting & IP design for enterprise-grade networks
+**Subnetting & IP design** for enterprise-grade networks
 
 Secure network deployment with industry best practices
 
-Troubleshooting and verification (ping, traceroute, show commands)
+Troubleshooting and verification (**ping, traceroute, show commands**)
 
 Strong pragmatism and creativity in handling complex topologies
 

@@ -72,13 +72,13 @@ Strong pragmatism and creativity in handling complex topologies
 
 This topology is more than a lab – it reflects my ability to design, configure, and secure enterprise-class networks. It proves my readiness for roles in network engineering, infrastructure design, and network security.
 
-🏆 Author
+ Author
 
-Bradley Giovanni
+**Bradley Giovanni**
 
-Networking Enthusiast |Networking Engineer | Passionate about building secure, scalable networks
+Networking Administator |Networking Engineer | Passionate about building secure, scalable networks
 
-EMAIL: giovanniibradley@gmail.com
+EMAIL: **giovanniibradley@gmail.com**
 
 
  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/bradley-giovanniii293) 

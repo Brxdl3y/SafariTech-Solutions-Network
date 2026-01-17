@@ -1,6 +1,7 @@
 **SafariTech & Solutions LTD**
 
 **Overview**
+**Overview**
 
 This lab models **SafariTech's HQ network**: a small enterprise topology with clear separation of duties (Engineering vs Sales), a Layer‑3 core switch performing inter‑VLAN routing (SVIs), trunked access switches, and external router links to simulate upstream/ISP connectivity.
 
@@ -8,24 +9,25 @@ It intentionally goes beyond a classroom exercise — the configuration is writt
 
 
 **Topology (at a glance)**
+**Topology (at a glance)**
 
 
 Core: 3560 L3 Core Switch (SVIs, OSPF area 0, management, hardened)
 
 Access: Two 2960 access switches (Engineering & Sales)
 
-Router: Edge router simulating ISP links and participating in OSPF
+Router: Edge router simulating ISP links and participating in **OSPF**
 
-Departments & subnets:
+**Departments & subnets**
 
-Engineering (VLAN 10) — 10.10.10.0/24 — SVI 10.10.10.1
+**Engineering (VLAN 10)** — 10.10.10.0/24 — SVI 10.10.10.1
 
-Sales (VLAN 20) — 20.10.10.0/24 — SVI 20.10.10.1
+**Sales (VLAN 20)** — 20.10.10.0/24 — SVI 20.10.10.1
 
-Trunk links between Core ↔ Access (802.1Q), access ports to end hosts
+**Trunk links** between Core ↔ Access (802.1Q), access ports to end hosts
 
 
-What I built (features & rationale)
+**What I built (features & rationale)**
 
 
 **VLAN segmentation & SVIs** — isolates broadcast domains and places inter‑VLAN routing on the L3 core for performance and manageability.
@@ -52,9 +54,9 @@ Internet provider
 **Networking Keypoints**
 
 
-Design decision: "I chose SVIs on the L3 switch rather than ROAS for lower latency and higher throughput at the distribution layer."
+Design decision: "I chose **SVIs** on the L3 switch rather than ROAS for lower latency and higher throughput at the distribution layer."
 
-Security posture: "I used MD5 for OSPF authentication and SSH-only vty access to harden management paths."
+Security posture: "I used **MD5** for OSPF authentication and **SSH-only vty access** to harden management paths."
 
 Operational readiness: "Configs include interface descriptions, banners, and basic hardening to reflect a production mindset."
 
@@ -63,9 +65,9 @@ Troubleshooting readiness: "I validated connectivity and built verification step
 
 🌟 **Skills Showcased**
 
-Advanced Cisco IOS configuration (routing, switching, security)
+Advanced Cisco IOS configuration **(routing, switching, security)**
 
-Subnetting & IP design for enterprise-grade networks
+**Subnetting & IP design** for enterprise-grade networks
 
 Secure network deployment with industry best practices
 
@@ -86,7 +88,7 @@ This topology is more than a lab – it reflects my ability to design, configure
 
 Network Aministrator |Network Engineer | NOC TECHNINCIAN 
 
-EMAIL: giovanniibradley@gmail.com
+EMAIL: **giovanniibradley@gmail.com**
 
 
  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/bradley-giovanniii293) 

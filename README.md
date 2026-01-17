@@ -1,13 +1,13 @@
-SafariTech Solutions — Enterprise Network Lab
+**SafariTech & Solutions LTD**
 
-Overview
+**Overview**
 
 This lab models **SafariTech's HQ network**: a small enterprise topology with clear separation of duties (Engineering vs Sales), a Layer‑3 core switch performing inter‑VLAN routing (SVIs), trunked access switches, and external router links to simulate upstream/ISP connectivity.
 
-It intentionally goes beyond a classroom exercise — the configuration is written as if this were a real deployment: secure management, authenticated routing, useful documentation, and verifiable tests. Think of it as a short, demonstrable portfolio piece for a networking engineer role.
+It intentionally goes beyond a classroom exercise — the configuration is written as if this were a real deployment: secure management, authenticated routing, useful documentation,active redundancy and verifiable tests. Think of it as a short, demonstrable portfolio piece for a networking engineer role.
 
 
-Topology (at a glance)
+**Topology (at a glance)**
 
 
 Core: 3560 L3 Core Switch (SVIs, OSPF area 0, management, hardened)
@@ -40,10 +40,16 @@ What I built (features & rationale)
 
 **Device hardening** — MOTD banner, exec-timeout, disabled unused ports, descriptive interface naming.
 
+**Redundant gateways via HSRP** - HSRP provides 24/7 gateway availability for all devices per domain hence no downtime
+
+**Loop avertion through STP** - this helps prevent L2 loops by putting all links in a blocking state except one.
+
+Internet provider 
+
 **Documentation-friendly configs** — commented CLI blocks, consistent naming, and verification commands to make the configuration hireable and maintainable.
 
 
-Networking Keypoints 
+**Networking Keypoints**
 
 
 Design decision: "I chose SVIs on the L3 switch rather than ROAS for lower latency and higher throughput at the distribution layer."
@@ -55,7 +61,7 @@ Operational readiness: "Configs include interface descriptions, banners, and bas
 Troubleshooting readiness: "I validated connectivity and built verification steps so issues can be triaged quickly."
 
 
-🌟 Skills Showcased
+🌟 **Skills Showcased**
 
 Advanced Cisco IOS configuration (routing, switching, security)
 
@@ -65,18 +71,20 @@ Secure network deployment with industry best practices
 
 Troubleshooting and verification (ping, traceroute, show commands)
 
+Network reliability and redundancy
+
+Scalability on both L2 & L3 hence rare downtime cases
+
 Strong pragmatism and creativity in handling complex topologies
 
 
-🚀 Why This Project Matters
+🚀 **Why This Project Matters**
 
 This topology is more than a lab – it reflects my ability to design, configure, and secure enterprise-class networks. It proves my readiness for roles in network engineering, infrastructure design, and network security.
 
-🏆 Author
+🏆 Author - Bradley Giovanni
 
-Bradley Giovanni
-
-Networking Enthusiast |Networking Engineer | Passionate about building secure, scalable networks
+Network Aministrator |Network Engineer | NOC TECHNINCIAN 
 
 EMAIL: giovanniibradley@gmail.com
 

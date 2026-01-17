@@ -46,6 +46,11 @@ interface FastEthernet0/2
  duplex auto
  speed auto
 
+ !
+ Spanning-tree mode rapid-pvst
+ Spanning-tree vlan 10 root primary
+ Spanning-tree vlan 20 root primary
+
 ! Routing
 ip route 0.0.0.0 0.0.0.0 110.30.20.1 
 ip route 0.0.0.0 0.0.0.0 192.14.0.10 
@@ -61,12 +66,14 @@ interface vlan 20
 ! --- Access Switch 1 (Engineering) ---
 hostname ENG-ACCESS-SWSW1
 enable secret VLAN 
+
 !
 VLANs 
 vlan 10
  name ENGINEERING
 vlan 20
  name SALES
+
  !
 interface f0/1
  switchport mode access
@@ -81,16 +88,23 @@ interface GigabitEthernet0/1
  switchport trunk allowed vlan 10,20
  switchport mode trunk
 
+ !
+ Spanning-tree mode rapid-pvst
+ Spanning-tree portfast default
+ Spanning-tree portfast bpduguard default 
+
 #####################################################################
 
 ! --- Access Switch 3 (Sales) ---
 hostname SALES-ACCESS-SW3
 enable secret VLAN 
+
 !
 vlan 10
  name ENGINEERING
 vlan 20
  name SALES
+
  !
 interface f0/1
  switchport mode access
@@ -98,6 +112,12 @@ interface f0/1
 interface f0/2
  switchport mode access
  switchport access vlan 20
+
+ !
+ Spanning-tree mode rapid-pvst
+ Spanning-tree portfast default
+ Spanning-tree portfast bpduguard default
+
  !
 interface GigabitEthernet0/2
  switchport trunk native vlan 99
@@ -113,11 +133,19 @@ enable secret VLAN
 interface f0/0
  ip address 110.30.20.1 255.255.255.252
  no shut
+
 interface f0/1
  ip address 192.14.0.1 255.255.255.252
  no shut
+
 interface f0/2
  ip address 172.16.0.1 255.255.255.252
+ no shut
+
+ interface fa0/3/0
+ switchport mode access
+ switchport access vlan 10
+ ip address 
  no shut
 !
 ip classless

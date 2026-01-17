@@ -9,8 +9,6 @@ It intentionally goes beyond a classroom exercise — the configuration is writt
 
 
 **Topology (at a glance)**
-**Topology (at a glance)**
-
 
 Core: 3560 L3 Core Switch (SVIs, OSPF area 0, management, hardened)
 

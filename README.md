@@ -1,11 +1,10 @@
 **SafariTech & Solutions LTD**
 
 **Overview**
-**Overview**
 
 This lab models **SafariTech's HQ network**: a small enterprise topology with clear separation of duties (Engineering vs Sales), a Layer‑3 core switch performing inter‑VLAN routing (SVIs), trunked access switches, and external router links to simulate upstream/ISP connectivity.
 
-It intentionally goes beyond a classroom exercise — the configuration is written as if this were a real deployment: secure management, authenticated routing, useful documentation,active redundancy and verifiable tests. Think of it as a short, demonstrable portfolio piece for a networking engineer role.
+It intentionally goes beyond a classroom exercise — the configuration is written as if this were a real deployment done: secure management, authenticated routing, useful documentation,active redundancy and verifiable tests. Think of it as a short, demonstrable portfolio piece for a networking engineer role.
 
 
 **Topology (at a glance)**
@@ -14,7 +13,7 @@ Core: 3560 L3 Core Switch (SVIs, OSPF area 0, management, hardened)
 
 Access: Two 2960 access switches (Engineering & Sales)
 
-Router: Edge router simulating ISP links and participating in **OSPF**
+Router: Edge router simulating ISP links and participating in **OSPF**.
 
 **Departments & subnets**
 
@@ -28,7 +27,7 @@ Router: Edge router simulating ISP links and participating in **OSPF**
 **What I built (features & rationale)**
 
 
-**VLAN segmentation & SVIs** — isolates broadcast domains and places inter‑VLAN routing on the L3 core for performance and manageability.
+**VLAN segmentation & SVIs** — isolates broadcast domains and places inter‑VLAN routing on the L3 core for performance and manageability throughout.
 
 **Trunking** — 802.1Q trunks on distribution links to carry multiple VLANs cleanly.
 

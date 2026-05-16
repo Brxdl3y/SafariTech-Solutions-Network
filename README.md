@@ -2,7 +2,7 @@
 
 📌**Overview**
 
-This lab models **SafariTech's HQ network**: a small enterprise topology with clear separation of duties (Engineering vs Sales), a Layer‑3 core switch performing inter‑VLAN routing (SVIs), trunked access switches, and external router links to simulate upstream/ISP connectivity.
+This lab models **SafariTech's HQ network**; a small enterprise topology with clear separation of duties (Engineering vs Sales), a Layer‑3 core switch performing inter‑VLAN routing (SVIs), trunked access switches, and external router links to simulate upstream/ISP connectivity.
 
 It intentionally goes beyond a classroom exercise — the configuration is written as if this were a real deployment done: secure management, authenticated routing, useful documentation,active redundancy and verifiable tests. Think of it as a short, demonstrable portfolio piece for a networking engineer role.
 
@@ -57,7 +57,7 @@ Internet provider
 
 ➔**Operational readiness**: "Configs include interface descriptions, banners, and basic hardening to reflect a production mindset."
 
-Troubleshooting readiness: "I validated connectivity and built verification steps so issues can be triaged quickly."
+➔Troubleshooting readiness: "I validated connectivity and built verification steps so issues can be triaged quickly."
 
 
 🌟 **Skills Showcased**

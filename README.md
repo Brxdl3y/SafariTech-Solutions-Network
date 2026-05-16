@@ -9,11 +9,11 @@ It intentionally goes beyond a classroom exercise — the configuration is writt
 
 📌**Topology (at a glance)**
 
-Core: 3560 L3 Core Switch (SVIs, OSPF area 0, management, hardened)
+•Core: 3560 L3 Core Switch (SVIs, OSPF area 0, management, hardened)
 
-Access: Two 2960 access switches (Engineering & Sales)
+•Access: Two 2960 access switches (Engineering & Sales)
 
-Router: Edge router simulating ISP links and participating in **OSPF**.
+•Router: Edge router simulating ISP links and participating in **OSPF**.
 
 📌**Departments & subnets**
 
@@ -27,11 +27,11 @@ Router: Edge router simulating ISP links and participating in **OSPF**.
 📌**What I built (features & rationale)**
 
 
-**VLAN segmentation & SVIs** — isolates broadcast domains and places inter‑VLAN routing on the L3 core for performance and manageability throughout.
+🔹**VLAN segmentation & SVIs** — isolates broadcast domains and places inter‑VLAN routing on the L3 core for performance and manageability throughout.
 
-**Trunking** — 802.1Q trunks on distribution links to carry multiple VLANs cleanly.
+🔹**Trunking** — 802.1Q trunks on distribution links to carry multiple VLANs cleanly.
 
-**OSPF routing** — area 0 used for core routing; simple, industry‑typical design.
+🔹**OSPF routing** — area 0 used for core routing; simple, industry‑typical design.
 
 **OSPF MD5 authentication** — demonstrates secure routing protocol practice (protects against rogue routers and accidental adjacency).
 

@@ -41,11 +41,11 @@ It intentionally goes beyond a classroom exercise — the configuration is writt
 
 🔹**Redundant gateways via HSRP** - HSRP provides 24/7 gateway availability for all devices per domain hence no downtime
 
-**Loop avertion through STP** - this helps prevent L2 loops by putting all links in a blocking state except one.
+🔹**Loop avertion through STP** - this helps prevent L2 loops by putting all links in a blocking state except one.
 
 Internet provider 
 
-**Documentation-friendly configs** — commented CLI blocks, consistent naming, and verification commands to make the configuration hireable and maintainable.
+🔹**Documentation-friendly configs** — commented CLI blocks, consistent naming, and verification commands to make the configuration hireable and maintainable .
 
 
 📌**Networking Keypoints**
@@ -57,7 +57,7 @@ Internet provider
 
 ➔**Operational readiness**: "Configs include interface descriptions, banners, and basic hardening to reflect a production mindset."
 
-➔Troubleshooting readiness: "I validated connectivity and built verification steps so issues can be triaged quickly."
+➔**Troubleshooting readiness**: "I validated connectivity and built verification steps so issues can be triaged quickly."
 
 
 🌟 **Skills Showcased**

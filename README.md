@@ -33,13 +33,13 @@ It intentionally goes beyond a classroom exercise — the configuration is writt
 
 🔹**OSPF routing** — area 0 used for core routing; simple, industry‑typical design.
 
-**OSPF MD5 authentication** — demonstrates secure routing protocol practice (protects against rogue routers and accidental adjacency).
+🔹**OSPF MD5 authentication** — demonstrates secure routing protocol practice (protects against rogue routers and accidental adjacency).
 
-**SSH v2 + local user auth** — secure out‑of‑band management; service password-encryption to avoid plain text on the console and secure remote access.
+🔹**SSH v2 + local user auth** — secure out‑of‑band management; service password-encryption to avoid plain text on the console and secure remote access.
 
-**Device hardening** — MOTD banner, exec-timeout, disabled unused ports, descriptive interface naming.
+🔹**Device hardening** — MOTD banner, exec-timeout, disabled unused ports, descriptive interface naming.
 
-**Redundant gateways via HSRP** - HSRP provides 24/7 gateway availability for all devices per domain hence no downtime
+🔹**Redundant gateways via HSRP** - HSRP provides 24/7 gateway availability for all devices per domain hence no downtime
 
 **Loop avertion through STP** - this helps prevent L2 loops by putting all links in a blocking state except one.
 

@@ -62,15 +62,15 @@ Internet provider
 
 🌟 **Skills Showcased**
 
-Advanced Cisco IOS configuration **(routing, switching, security)**
+🔸Advanced Cisco IOS configuration **(routing, switching, security)**
 
-**Subnetting & IP design** for enterprise-grade networks
+🔸**Subnetting & IP design** for enterprise-grade networks
 
-Secure network deployment with industry best practices
+🔸Secure network deployment with industry best practices
 
-Troubleshooting and verification (ping, traceroute, show commands)
+🔸Troubleshooting and verification (ping, traceroute, show commands)
 
-Network reliability and redundancy
+🔸Network reliability and redundancy
 
 Scalability on both L2 & L3 hence rare downtime cases
 
@@ -81,7 +81,7 @@ Strong pragmatism and creativity in handling complex topologies
 
 This topology is more than a lab – it reflects my ability to design, configure, and secure enterprise-class networks. It proves my readiness for roles in network engineering, infrastructure design, and network security.
 
-🏆 Author - Bradley Giovanni
+🏆 Author - **Bradley Giovanni**
 
 Network Aministrator |Network Engineer | NOC TECHNINCIAN 
 

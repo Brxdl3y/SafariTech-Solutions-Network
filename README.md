@@ -72,9 +72,9 @@ Internet provider
 
 🔸Network reliability and redundancy
 
-Scalability on both L2 & L3 hence rare downtime cases
+🔸Scalability on both L2 & L3 hence rare downtime cases
 
-Strong pragmatism and creativity in handling complex topologies
+🔸Strong pragmatism and creativity in handling complex topologies
 
 
 🚀 **Why This Project Matters**
